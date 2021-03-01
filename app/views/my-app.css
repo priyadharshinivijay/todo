@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    max-width: 600px;
+    margin:0 auto;
+}
+.Todopage-title
+{
+    font-size:48px;
+    line-height: 1.6;
+    color: darkcyan;
+}
+.Todopage-section
+{
+    font-size: :34px;
+    line-height: 1.4;
+    color: darkviolet;
+}
+
+.Todopage-todo{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-left: 32px;
+    color:#453C52
+}
+.Todosection{
+    margin-bottom: 30px;
+    margin-left: 32px;
+    padding: 32px;
+    color:#453C52;
+    font-size:34px;
+}
+/*typograpgy scale
+48px
+34px
+24px
+20px
+16px
+*/
