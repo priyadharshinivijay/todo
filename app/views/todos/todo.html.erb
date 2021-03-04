@@ -1,0 +1,4 @@
+<p>This shows a single todo</p>
+<% id=params[:id] %>
+<% todo=Todo.find(id) %>
+<p><%= todo.to_pleasant_string %></p>
