@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   # - create a resource
  
   #match '/todos'=> 'todos#index', via: :get
-  get "todos",to:"todos#index"
-  get "todos/:id",to:"todos#show"
-  patch "todos/:id",to:"todos#update"
-  #resources :todos
-  get "user",to:"user#index"
+  # get "todos",to:"todos#index"
+  # get "todos/:id",to:"todos#show"
+  # patch "todos/:id",to:"todos#update"
+  resources :todos
+  # get "user",to:"user#index"
 end
