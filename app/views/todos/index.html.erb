@@ -2,11 +2,13 @@
 
 <main class="m1">      
 <article><h1 class="h1h">My To-do List </h1>
-<section class="s1">
-    <input type="text" placeholder="What's next?" class="textfield1 ">
-    <input type="date" class="textfield2" >
-    <input type="button" value="Add" class="b1" placeholder="Add">
-</section>
+<form class="s1" action="/todos" method="POST">
+
+    <input type="text" placeholder="What's next?" class="textfield1" name="todo_text">
+    <input type="date" class="textfield2" name="due_date">
+    <input type="submit" value="Add" class="b1" placeholder="Add">
+</form>
+
 <%= render partial:"todo-section",locals: 
 {section_title: "Overdue",
 todos: Todo.overdue,
