@@ -3,7 +3,7 @@
         <p class="p1">
         <%= section_title %>
         </p>
-        <p class="p2"><%=todos.completed.count%> / <%=todos.count%></p>
+        <p class="p2"><%=todos.completed?.count%> / <%=todos.count%></p>
     </div>
     <ul>
     <% todos.all.each do |todo| %>
