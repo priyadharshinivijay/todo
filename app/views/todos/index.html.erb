@@ -2,12 +2,12 @@
 
 <main class="m1">      
 <article><h1 class="h1h">My To-do List </h1>
-<form class="s1" action="/todos" method="POST">
-
+<%= form_with(url: "/todos",method: "post",class:"s1") do%>
     <input type="text" placeholder="What's next?" class="textfield1" name="todo_text">
     <input type="date" class="textfield2" name="due_date">
     <input type="submit" value="Add" class="b1" placeholder="Add">
-</form>
+<%end%>
+
 
 <%= render partial:"todo-section",locals: 
 {section_title: "Overdue",
