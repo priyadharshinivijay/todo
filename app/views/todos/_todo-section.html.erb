@@ -15,16 +15,18 @@
                 name="completed"
                 <%= todo.completed ? "checked" : ""%>
                 onclick="this.form.submit()"
-                />
-                <%= todo.todo_text %>
-            
+                >
                 <%end%>
+                <p class='<%= todo.completed ? "todo" : ""%>'>
+                <%= todo.todo_text %>
+                </p>
+               
                 <% if show_due_date %>
                     <p class="Todoitem"> <%= todo.due_date.to_s(:short)%> </p>
                 <%end%>
-                <a class="delete" href="javascript:void(0)">
-                    <img src="del.jpg">
-                </a>
+                <%= form_with(url:"todos/#{todo.id}", method:"delete") do %> 
+                <input type="image" src="trash.png" class="delete">
+                <%end%>
             </label>
             </li>
     <%end%>

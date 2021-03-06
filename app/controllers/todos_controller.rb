@@ -25,4 +25,10 @@ class TodosController < ApplicationController
         todo.save!
         redirect_to todos_path
     end
+    def destroy
+        id=params[:id]
+        todo=Todo.find(id)
+        todo.delete
+        redirect_to todos_path
+    end
 end

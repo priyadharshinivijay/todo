@@ -27,7 +27,7 @@ div.d1
 }
 input.textfield1
 {
-    padding:6px 12px;
+    padding:9.5px 12px;
     border: 1px solid #BFB8CC;
     font-size: 14px;
     margin-right: 10px;
@@ -96,10 +96,10 @@ ol,ul
 .delete
 {
     visibility: hidden;
-    margin-left: 8px;
+    margin-left: 10px;
 }
-.delete > img{
-    width: 25px;
+.delete {
+    width: 20px;
 }
 .ll1  :hover
 {
@@ -119,4 +119,8 @@ ol,ul
     font-size: 10px;
     color :#453C52;
     margin-left: 10px;
+}
+.todo
+{
+    text-decoration: line-through;
 }
