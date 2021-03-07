@@ -1,6 +1,8 @@
 require 'active_record'
 require "date"
 class Todo<ActiveRecord::Base
+    belongs_to :user
+    
     def to_displayable_string 
         display_status = completed ? "[X]" : "[ ]" 
         "#{id}. #{display_status} #{todo_text} #{due_date}"  

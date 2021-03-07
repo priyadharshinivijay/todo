@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # get "todos",to:"todos#index"
   # get "todos/:id",to:"todos#show"
   # patch "todos/:id",to:"todos#update"
+  get "/",to:"home#index"
   resources :todos
+  resources :users
   # get "user",to:"user#index"
 end
