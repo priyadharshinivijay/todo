@@ -15,6 +15,7 @@
     <%if @current_user%>
     <p class="userheader">
     Welcome <%=@current_user.first_name%>!
+    <%= link_to "Signout",destroy_sessions_path,method:"delete"%>
     </p>
     <%end%>
     <%= yield %>
