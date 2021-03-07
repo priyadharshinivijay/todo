@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .userheader
+ {
+     padding: 10px;
+     font-size: 15px;
+     background-color: lightgray;
+     margin-bottom: 10px;
+ }
