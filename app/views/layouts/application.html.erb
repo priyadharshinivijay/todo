@@ -21,5 +21,9 @@
     <%= yield %>
  
   </body>
-
+  <% if flash[:error] %>
+  <p class="flash">
+  <%= flash[:error] %>
+  </p>
+  <%end%>
 </html>
