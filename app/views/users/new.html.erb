@@ -1,7 +1,7 @@
 <p class="new-user-title"> Welcome new user!</p>
 
 <section class="UsersNew">
-<%=form_with url: users_path do |form| %>
+<%=form_with url: users_path, method:"post" do |form| %>
     <div class="Form-section">
         <p class= "form-label">First name: </p>
         <%= form.text_field :first_name , class: "form-input" %>
